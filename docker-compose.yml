@@ -5,6 +5,9 @@ services:
     ports:
       - "8889:8888"
     volumes:
-      - ./fundamentos_matematicos_para_ia:/app/notebooks
-    working_dir: /app/notebooks
+      - ./periodo_1:/app/periodo_1
+      - ./periodo_2:/app/periodo_2
+      - ./periodo_3:/app/periodo_3
+      - ./periodo_4:/app/periodo_4
+    working_dir: /app
     restart: unless-stopped

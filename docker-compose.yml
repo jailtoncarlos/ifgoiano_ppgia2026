@@ -1,0 +1,10 @@
+services:
+  jupyter:
+    build: .
+    container_name: ppgia-jupyter
+    ports:
+      - "8889:8888"
+    volumes:
+      - ./fundamentos_matematicos_para_ia:/app/notebooks
+    working_dir: /app/notebooks
+    restart: unless-stopped
